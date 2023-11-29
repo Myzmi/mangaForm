@@ -1,0 +1,43 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Manga Taste Form</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <h1 id="title">Manga Taste Form</h1>
+        <p id="description">Just a form to understand your manga taste</p>
+        <form id="survey-form">
+          <label id="name-label">Name: <input id="name" type="text" placeholder="Miyamoto Musashi" required></label>
+          <label id="email-label">email: <input id="email" type="email" placeholder="gutslover@mmail.com" required></label>
+          <label id="number-label">Number of Mangas Your Read: <input id="number" type="number" min="0" max="1000" placeholder="13" required></label>
+          <label>Select a manga:
+            <select id="dropdown">
+              <option value=""></option>
+              <option value="1">Berserk</option>
+              <option value="2">Monster</option>
+              <option value="3">Naruto</option>
+              <option value="4">Chainsaw Man</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Do you like shonen or seinen more?</legend>
+            <label><input name="type" type="radio" value="1">Shonen</label>
+            <label><input name="type" type="radio" value="2" checked>Seinen</label>
+          </fieldset>
+          <fieldset>
+            <legend>Select some mangas you like</legend>
+            <label><input type="checkbox" value="1">Jujutsu Kaisen</label>
+            <label><input type="checkbox" value="2">Vagabond</label>
+            <label><input type="checkbox" value="3">One Piece</label>
+            <label><input type="checkbox" value="4">Climber</label>
+            <label><input type="checkbox" value="5">Dorohedoro</label>
+          </fieldset>
+          <label>Extra information
+            <textarea row="5" cols="55" placeholder="I like mangas which has some interesting twists..."></textarea>
+          </label>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </body>
+    </html>
